@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/nx-react/**/*",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/apps/nx-react"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

@@ -5,44 +5,5 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project nx-react --web",
-  "targets": {
-  "options": {
-    "cwd": "apps/nx-react",
-    "command": "vite build"
-  },
-  "cache": true,
-  "dependsOn": [
-    "^build"
-  ],
-  "inputs": [
-    "production",
-    "^production",
-    {
-      "externalDependencies": [
-        "vite"
-      ]
-    }
-  ],
-  "outputs": [
-    "{workspaceRoot}/dist/apps/nx-react"
-  ],
-  "metadata": {
-    "technologies": [
-      "vite"
-    ],
-    "description": "Run Vite build",
-    "help": {
-      "command": "npx vite build --help",
-      "example": {
-        "options": {
-          "sourcemap": true,
-          "manifest": "manifest.json"
-        }
-      }
-    }
-  },
-  "executor": "nx:run-commands",
-  "configurations": {},
-  "parallelism": true
-}
+  "targets": {}
 }
