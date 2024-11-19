@@ -1,3 +1,4 @@
+import { HelloServer } from '@nx-monorepo/my-new-lib/server';
 export default function Index() {
   /*
    * Replace the elements below with your own.
@@ -6,6 +7,7 @@ export default function Index() {
    */
   return (
     <div>
+      <HelloServer />
       <div className="wrapper">
         <div className="container">
           <div id="welcome">

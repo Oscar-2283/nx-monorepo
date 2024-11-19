@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-monorepo/api": ["api/src/index.ts"],
+      "@nx-monorepo/my-new-lib": ["libs/my-new-lib/src/index.ts"],
+      "@nx-monorepo/my-new-lib/server": ["libs/my-new-lib/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
