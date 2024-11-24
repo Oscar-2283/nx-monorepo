@@ -5,14 +5,21 @@ export default function Index() {
    *
    * Note: The corresponding styles are in the ./index.tailwind file.
    */
+
+  console.log('aac',process.env.NEXT_PUBLIC_API_URL);
   return (
     <div>
       <HelloServer />
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
+            {process.env.NEXT_PUBLIC_API_URL}
+            <div>
+
+            {process.env.NEXT_NX_TEST}
+            </div>
             <h1>
-              <span> Hello there, </span>
+              <span> Hello t, </span>
               Welcome nx-next 👋
             </h1>
           </div>

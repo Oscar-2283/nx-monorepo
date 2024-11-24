@@ -7,6 +7,8 @@ import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
   const { count, increment } = useMyNewHook();
+  console.log('{process.env.VITE_API_URL}', process.env.VITE_API_URL)
+  console.log('{process.env.REACT_NX_TEST}', process.env.REACT_NX_TEST)
 
   const fetchData = async () => {
     const posts = await fetchPosts();

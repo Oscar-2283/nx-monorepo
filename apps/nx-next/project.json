@@ -5,5 +5,13 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project nx-next --web",
-  "targets": {}
+  "targets": {
+    "test666": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "nx-next:build",
+        "dev": true
+      }
+    }
+  }
 }
