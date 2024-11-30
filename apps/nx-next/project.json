@@ -12,6 +12,14 @@
         "buildTarget": "nx-next:build",
         "dev": true
       }
+    },
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/nx-next"
+      }
     }
   }
 }
